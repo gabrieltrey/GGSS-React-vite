@@ -5,6 +5,7 @@ import Services from "./components/Pages/Services";
 import Contact from "./components/Pages/Contact";
 import NavBar from "./components/Layout/Navbar";
 import Footer from "./components/Layout/Footer";
+import Admon from "./components/Pages/Admon";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/admon" element={<Admon />} />
         </Routes>
         <Footer/>
       </div>

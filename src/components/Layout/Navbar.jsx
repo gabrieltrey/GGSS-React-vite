@@ -38,6 +38,7 @@ const NavBar = () => {
                 <Link to="/about" className="block py-2 px-4 text-sm hover:bg-gray-700">Acerca de</Link>
                 <Link to="/services" className="block py-2 px-4 text-sm hover:bg-gray-700">Servicios</Link>
                 <Link to="/contact" className="block py-2 px-4 text-sm hover:bg-gray-700">Contacto</Link>
+                <Link to="/admon" className="block py-2 px-4 text-sm hover:bg-gray-700">Admon</Link>
             </div>
         </nav>
     );
