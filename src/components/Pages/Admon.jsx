@@ -1,16 +1,20 @@
-import React from 'react';
-import NewUser from '../Layout/NewUser';
-import UserList from '../Layout/UserList';
-import UserSearch from '../Layout/UserSearch';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import React from "react";
+import NewUser from "../Layout/NewUser";
+import UserList from "../Layout/UserList";
+import UserSearch from "../Layout/UserSearch";
+import NavBarAdmon from "../Layout/NavbarAdmon";
 
 const Admon = () => {
   return (
     <div>
-      <h1 className='text-center'>Formulario de envío de datos</h1>
-      <div className='px-3 p-4'><NewUser /></div>
-      <div className='px-3 p-4'><UserList/></div>
-      <div className='px-3 p-4'><UserSearch/></div>
-      
+      <NavBarAdmon></NavBarAdmon>
+      <Routes>
+        <Route path="/admon/newuser" element={<NewUser />} />
+        <Route path="/admon/usersearch" element={<UserSearch />} />
+        <Route path="/admon/userlist" element={<UserList />} />
+      </Routes>
     </div>
   );
 };

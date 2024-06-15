@@ -20,11 +20,12 @@ const UserList = () => {
   return (
     <div>
       <h1>Lista de usuarios</h1>
-      <ul>
+      <ul className='text-orange-600'>
         {users.map((user) => (
-          <li key={user.id}>
-            {user.firstname} {user.lastname} ({user.email})
-          </li>
+          <table className='flex-row table-fixed caption-bottom'><tr>
+            <td className='border border-gray-500 border-spacing: 10rem 10rem p-1'><li key={user.id}>
+            {user.name} {user.phone} ({user.email})
+          </li></td><td><button className='decoration-slate-50 text-center'>click</button></td></tr></table>
         ))}
       </ul>
     </div>
